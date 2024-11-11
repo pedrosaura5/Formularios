@@ -1,0 +1,108 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Estilo del contenedor del formulario */
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el ratón sobre el formulario */
+form:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Estilo de los campos de entrada */
+label {
+    display: block;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #d1d9e6;
+    border-radius: 8px;
+    background-color: #f1f3f8;
+    color: #333;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al enfocar el campo */
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus {
+    border-color: #6c63ff;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+    outline: none;
+}
+
+/* Botón principal de envío */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el ratón sobre el botón */
+button[type="submit"]:hover {
+    background-color: #574bff;
+}
+
+/* Botón para mostrar/ocultar contraseña */
+button[type="button"] {
+    position: absolute;
+    right: 20px;
+    top: 38px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #6c63ff;
+    font-size: 0.9rem;
+}
+
+/* Estilo del enlace para cambiar entre login y registro */
+p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+p a {
+    color: #6c63ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #574bff;
+}
+
